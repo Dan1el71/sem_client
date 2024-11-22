@@ -1,0 +1,17 @@
+<aside>
+  <div>
+    <h1>Gestion Medica</h1>
+  </div>
+  <nav>
+    <ul>
+      @for (elem of elements; track $index) {
+      <li>
+        <a routerLink="elem.ref" routerLinkActive="active">
+          <i class="{{ elem.icon }}"></i>
+          <span>{{ elem.name }}</span>
+        </a>
+      </li>
+      }
+    </ul>
+  </nav>
+</aside>
